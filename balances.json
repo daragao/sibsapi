@@ -1,0 +1,22 @@
+{
+  "balances": [
+    {
+      "expected": {
+        "ammout": {
+          "currency": "EUR",
+          "content": "3000"
+        },
+        "lastActionDateTime": "",
+        "date": ""
+      },
+      "authorized": {
+        "ammout": {
+          "currency": "EUR",
+          "content": "3000"
+        },
+        "lastActionDateTime": "",
+        "date": ""
+      }
+    }
+  ]
+}

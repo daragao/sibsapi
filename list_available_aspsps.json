@@ -1,0 +1,796 @@
+{
+  "aspsp-list": [
+    {
+      "id": "424250495054504C",
+      "bic": "BBPIPTPL",
+      "bank-code": "0010",
+      "aspsp-cde": "BBPI",
+      "name": "BANCO BPI, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/BPI-2.png",
+      "api-list": [
+        {
+          "consents": [
+            "BBPI/v1-0-2/consents"
+          ],
+          "payments": [
+            "BBPI/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BBPI/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BBPI/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BBPI/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BBPI/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BBPI/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "544F54415054504C",
+      "bic": "TOTAPTPL",
+      "bank-code": "0018",
+      "aspsp-cde": "BST",
+      "name": "BANCO SANTANDER TOTTA, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Santander-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BST/v1-0-2/consents"
+          ],
+          "payments": [
+            "BST/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BST/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BST/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BST/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BST/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BST/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "414354565054504C585858",
+      "bic": "ACTVPTPLXXX",
+      "bank-code": "0023",
+      "aspsp-cde": "ABPT",
+      "name": "BANCO ACTIVOBANK, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/ActivoBank-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "ABPT/v1-0-2/consents"
+          ],
+          "payments": [
+            "ABPT/v1-0-2/payments"
+          ],
+          "accounts": [
+            "ABPT/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "ABPT/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "ABPT/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "ABPT/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "ABPT/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "42434F4D5054504C",
+      "bic": "BCOMPTPL",
+      "bank-code": "0033",
+      "aspsp-cde": "BCPPT",
+      "name": "BANCO COMERCIAL PORTUGUES, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Millenium-bcp-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BCPPT/v1-0-2/consents"
+          ],
+          "payments": [
+            "BCPPT/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BCPPT/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BCPPT/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BCPPT/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BCPPT/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BCPPT/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "434744495054504C",
+      "bic": "CGDIPTPL",
+      "bank-code": "0035",
+      "aspsp-cde": "CGDPT",
+      "name": "CAIXA GERAL DE DEPOSITOS, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/CGD-2.png",
+      "api-list": [
+        {
+          "consents": [
+            "CGDPT/v1-0-2/consents"
+          ],
+          "payments": [
+            "CGDPT/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CGDPT/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CGDPT/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CGDPT/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CGDPT/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CGDPT/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4D50494F5054504C585858",
+      "bic": "MPIOPTPLXXX",
+      "bank-code": "0036",
+      "aspsp-cde": "CEMG",
+      "name": "CAIXA ECONOMICA MONTEPIO GERAL",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/montepio-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "CEMG/v1-0-2/consents"
+          ],
+          "payments": [
+            "CEMG/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CEMG/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CEMG/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CEMG/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CEMG/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CEMG/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4343434D5054504C",
+      "bic": "CCCMPTPL",
+      "bank-code": "0045",
+      "aspsp-cde": "GCA",
+      "name": "CAIXA CENTRAL - CAIXA CENTRAL DE CREDITO AGRICOLA MUTUO, CRL",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/CCCAM-2.png",
+      "api-list": [
+        {
+          "consents": [
+            "GCA/v1-0-2/consents"
+          ],
+          "payments": [
+            "GCA/v1-0-2/payments"
+          ],
+          "accounts": [
+            "GCA/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "GCA/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "GCA/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "GCA/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "GCA/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43454D4150545032585858",
+      "bic": "CEMAPTP2XXX",
+      "bank-code": "0059",
+      "aspsp-cde": "CEMAH",
+      "name": "CAIXA ECONOMICA DA MISERICORDIA DE ANGRA DO HEROISMO",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/CEMAH-logo.png",
+      "api-list": [
+        {
+          "consents": [
+            "CEMAH/v1-0-2/consents"
+          ],
+          "payments": [
+            "CEMAH/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CEMAH/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CEMAH/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CEMAH/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CEMAH/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CEMAH/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "424449475054504C585858",
+      "bic": "BDIGPTPLXXX",
+      "bank-code": "0061",
+      "aspsp-cde": "BIG",
+      "name": "BANCO DE INVESTIMENTO GLOBAL, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Big-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BIG/v1-0-2/consents"
+          ],
+          "payments": [
+            "BIG/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BIG/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BIG/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BIG/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BIG/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BIG/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "425047505054504C585858",
+      "bic": "BPGPPTPLXXX",
+      "bank-code": "0064",
+      "aspsp-cde": "BPG",
+      "name": "BANCO PORTUGUES DE GESTAO, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/BPG-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BPG/v1-0-2/consents"
+          ],
+          "payments": [
+            "BPG/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BPG/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BPG/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BPG/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BPG/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BPG/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "42504E505054504C585858",
+      "bic": "BPNPPTPLXXX",
+      "bank-code": "0079",
+      "aspsp-cde": "BIC",
+      "name": "BANCO BIC PORTUGUES, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/EuroBic-2.png",
+      "api-list": [
+        {
+          "consents": [
+            "BIC/v1-0-2/consents"
+          ],
+          "payments": [
+            "BIC/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BIC/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BIC/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BIC/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BIC/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BIC/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "424150415054504C585858",
+      "bic": "BAPAPTPLXXX",
+      "bank-code": "0189",
+      "aspsp-cde": "ATLEU",
+      "name": "BANCO ATLANTICO EUROPA, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Atlantico-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "ATLEU/v1-0-2/consents"
+          ],
+          "payments": [
+            "ATLEU/v1-0-2/payments"
+          ],
+          "accounts": [
+            "ATLEU/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "ATLEU/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "ATLEU/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "ATLEU/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "ATLEU/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "435454565054504C585858",
+      "bic": "CTTVPTPLXXX",
+      "bank-code": "0193",
+      "aspsp-cde": "BCTT",
+      "name": "BANCO CTT, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/BancoCTT-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BCTT/v1-0-2/consents"
+          ],
+          "payments": [
+            "BCTT/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BCTT/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BCTT/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BCTT/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BCTT/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BCTT/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "424B424B5054504C585858",
+      "bic": "BKBKPTPLXXX",
+      "bank-code": "0269",
+      "aspsp-cde": "BNKI",
+      "name": "BANKINTER, SA - SUCURSAL EM PORTUGAL",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Bankinter-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "BNKI/v1-0-2/consents"
+          ],
+          "payments": [
+            "BNKI/v1-0-2/payments"
+          ],
+          "accounts": [
+            "BNKI/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "BNKI/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "BNKI/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "BNKI/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "BNKI/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4344435450545032585858",
+      "bic": "CDCTPTP2XXX",
+      "bank-code": "5180",
+      "aspsp-cde": "CCAML",
+      "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE LEIRIA, CRL",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Caixa-Crédito-Leiria-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "CCAML/v1-0-2/consents"
+          ],
+          "payments": [
+            "CCAML/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CCAML/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CCAML/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CCAML/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CCAML/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CCAML/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4347444946525050585858",
+      "bic": "CGDIFRPPXXX",
+      "bank-code": "8226",
+      "aspsp-cde": "CGDFR",
+      "name": "CAIXA GERAL DE DEPOSITOS FRANCE",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Caixa-Geral-de-Depósitos-France-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "CGDFR/v1-0-2/consents"
+          ],
+          "payments": [
+            "CGDFR/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CGDFR/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CGDFR/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CGDFR/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CGDFR/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CGDFR/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "424553435054504C",
+      "bic": "BESCPTPL",
+      "bank-code": "0007",
+      "aspsp-cde": "NVB",
+      "name": "NOVO BANCO, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Novo-Banco-2.png",
+      "api-list": [
+        {
+          "consents": [
+            "NVB/v1-0-2/consents"
+          ],
+          "payments": [
+            "NVB/v1-0-2/payments"
+          ],
+          "accounts": [
+            "NVB/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "NVB/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "NVB/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "NVB/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "NVB/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4245534150545041585858",
+      "bic": "BESAPTPAXXX",
+      "bank-code": "0160",
+      "aspsp-cde": "NVBA",
+      "name": "NOVO BANCO DOS ACORES, SA",
+      "logoLocation": "https://sibs-productsites.azurewebsites.net/apimarket/wp-content/uploads/sites/17/2019/02/Novo-Banco-dos-Açores-1.png",
+      "api-list": [
+        {
+          "consents": [
+            "NVBA/v1-0-2/consents"
+          ],
+          "payments": [
+            "NVBA/v1-0-2/payments"
+          ],
+          "accounts": [
+            "NVBA/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "NVBA/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "NVBA/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "NVBA/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "NVBA/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5549464350545031585858",
+      "bic": "UIFCPTP1XXX",
+      "bank-code": "0698",
+      "aspsp-cde": "UNICR",
+      "name": "Unicre - Instituição Financeira de Crédito S.A",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "UNICR/v1-0-2/consents"
+          ],
+          "payments": [
+            "UNICR/v1-0-2/payments"
+          ],
+          "accounts": [
+            "UNICR/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "UNICR/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "UNICR/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "UNICR/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "UNICR/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4346464950545031585858",
+      "bic": "CFFIPTP1XXX",
+      "bank-code": "0921",
+      "aspsp-cde": "COF",
+      "name": "COFIDIS",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "COFIDIS/v1-0-2/consents"
+          ],
+          "payments": [
+            "COFIDIS/v1-0-2/payments"
+          ],
+          "accounts": [
+            "COFIDIS/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "COFIDIS/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "COFIDIS/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "COFIDIS/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "COFIDIS/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4354495550545031585858",
+      "bic": "CTIUPTP1XXX",
+      "bank-code": "5340",
+      "aspsp-cde": "CATV",
+      "name": "Caixa De Credito Agricola Mutuo De Torres Vedras,c.r.l",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "CATV/v1-0-2/consents"
+          ],
+          "payments": [
+            "CATV/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CATV/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CATV/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CATV/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CATV/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CATV/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4345525450545031585858",
+      "bic": "CERTPTP1XXX",
+      "bank-code": "0098",
+      "aspsp-cde": "CABOM",
+      "name": "Caixa De Credito Agricola Mutuo De Bombarral Crl",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "CABOM/v1-0-2/consents"
+          ],
+          "payments": [
+            "CABOM/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CABOM/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CABOM/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CABOM/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CABOM/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CABOM/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4343434850545031585858",
+      "bic": "CCCHPTP1XXX",
+      "bank-code": "0097",
+      "aspsp-cde": "CACHM",
+      "name": "Caixa De Credito Agricola Mutuo Da Chamusca, C.r.l",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "CACHM/v1-0-2/consents"
+          ],
+          "payments": [
+            "CACHM/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CACHM/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CACHM/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CACHM/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CACHM/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CACHM/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43444F5450545031585858",
+      "bic": "CDOTPTP1XXX",
+      "bank-code": "5200",
+      "aspsp-cde": "CAMAF",
+      "name": "Caixa De Credito Agricola Mutuo De Mafra, C.R.L. ",
+      "logoLocation": "default.png",
+      "api-list": [
+        {
+          "consents": [
+            "CAMAF/v1-0-2/consents"
+          ],
+          "payments": [
+            "CAMAF/v1-0-2/payments"
+          ],
+          "accounts": [
+            "CAMAF/v1-0-2/accounts"
+          ],
+          "funds-confirmations": [
+            "CAMAF/v1-0-2/funds-confirmations"
+          ],
+          "periodic-payments": [
+            "CAMAF/v1-0-2/periodic-payments"
+          ],
+          "multibanco-payments": [
+            "CAMAF/v1-0-2/multibanco-payments"
+          ],
+          "periodic-multibanco-payments": [
+            "CAMAF/v1-0-2/periodic-multibanco-payments"
+          ]
+        }
+      ]
+    }
+  ]
+}

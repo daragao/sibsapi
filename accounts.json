@@ -1,0 +1,22 @@
+{
+  "accountList": [
+    {
+      "id": "71525dacac1763b812af4e83af61847",
+      "iban": "PT50003506520000745533025",
+      "msisdn": "",
+      "currency": "EUR",
+      "name": "CLIENTE HERCULES SSI TRINTA UM",
+      "accountType": "CACC",
+      "bic": "CGDIPTP0"
+    },
+    {
+      "id": "71525dacac1763b812af4e83af61848",
+      "iban": "PT50003506520001022633022",
+      "msisdn": "",
+      "currency": "EUR",
+      "name": "MADALENA EMPRESARIA TESTE",
+      "accountType": "CACC",
+      "bic": "CGDIPTP0"
+    }
+  ]
+}
