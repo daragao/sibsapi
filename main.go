@@ -20,7 +20,8 @@ func printConsentSteps(sibsClient *client.Client) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(string(bytesResp))
+	fmt.Printf("Get account %s from ASPSPCDE %s\n", "71525dacac1763b812af4e83af61848", aspspCde)
+	fmt.Printf("\tResponse: %s\n", string(bytesResp))
 
 	var account struct {
 		Account client.AccountReference `json:"account"`
@@ -48,7 +49,8 @@ func printConsentSteps(sibsClient *client.Client) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(string(bytesResp))
+	fmt.Printf("POST new consent with payload: %+v\n", consentPayload)
+	fmt.Printf("\tResponse: %s\n", string(bytesResp))
 
 	var consentResponse client.ConsentResponseResource
 	err = json.Unmarshal(bytesResp, &consentResponse)
@@ -60,7 +62,8 @@ func printConsentSteps(sibsClient *client.Client) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(string(bytesResp))
+	fmt.Printf("Get consent with ID %s\n", consentResponse.ConsentID)
+	fmt.Printf("\tResponse: %s\n", string(bytesResp))
 }
 
 func listAvailableASPSP(sibsClient *client.Client) []client.Aspsp {
@@ -114,11 +117,22 @@ func loadConfiguration(file string) (string, string) {
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
+	host := "https://site4.sibsapimarket.com"
+	// host := "https://site3.sibsapimarket.com"
+	// host := "https://site1.sibsapimarket.com:8445"
+	// host := "https://site1.sibsapimarket.com:8445"
+	// host := "https://site2.sibsapimarket.com:8445"
+	pathPrefix := "/sibs/apimarket-sb/"
 	clientID, _ := loadConfiguration("config.json")
 
-	sibsClient := &client.Client{http.DefaultClient, clientID}
+	sibsClient := &client.Client{http.DefaultClient, clientID, host, pathPrefix}
+	/*
+		sibsClient.Client.Transport = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		}
+	*/
 
-	// printConsentSteps(sibsClient)
+	//printConsentSteps(sibsClient)
 
 	/*
 		allASPSP := listAvailableASPSP(sibsClient)

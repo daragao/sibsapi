@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -14,8 +15,14 @@ import (
 // Client struct that has the sibs functions
 // TODO: make this struct private (with a public interface and factory)
 type Client struct {
-	Client   *http.Client
-	ClientID string
+	Client     *http.Client
+	ClientID   string
+	Host       string
+	PathPrefix string
+}
+
+func (c *Client) newRequest(method, relativePath string, payload io.Reader) (*http.Request, error) {
+	return http.NewRequest(method, c.Host+c.PathPrefix+relativePath, payload)
 }
 
 func generateUUID() string {
@@ -30,7 +37,7 @@ func generateUUID() string {
 }
 
 func (c *Client) executeRequest(req *http.Request) ([]byte, error) {
-	// req.Header.Add("accept", "application/json")
+	//req.Header.Add("accept", "application/json")
 	req.Header.Add("signature", "REPLACE_THIS_VALUE")
 	req.Header.Add("tpp-certificate", "REPLACE_THIS_VALUE")
 	req.Header.Add("tpp-request-id", generateUUID())
@@ -52,8 +59,16 @@ func (c *Client) executeRequest(req *http.Request) ([]byte, error) {
 	}
 
 	if resp.StatusCode != 200 {
-		log.Printf("Bad response code from %s: %d\n%s", req.URL, resp.StatusCode, body)
-		return body, errors.New("Bad response code")
+
+		//log.Printf("Bad response code from %s: %d\n%s", req.URL, resp.StatusCode, body)
+		errorStr := fmt.Sprintf("Bad response code from %s: %d\nBody\n\t%s\nHeader\n", req.URL, resp.StatusCode, body)
+		for name, headers := range resp.Header {
+			for _, h := range headers {
+				//fmt.Printf("\t%v:\t%v\n", name, h)
+				errorStr += fmt.Sprintf("\t%v:\t%v\n", name, h)
+			}
+		}
+		return body, errors.New(errorStr)
 	}
 
 	return body, nil
@@ -61,11 +76,7 @@ func (c *Client) executeRequest(req *http.Request) ([]byte, error) {
 
 // ListAvailableASPSP method
 func (c *Client) ListAvailableASPSP() ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/v1/available-aspsp"
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", "v1/available-aspsp", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -75,11 +86,7 @@ func (c *Client) ListAvailableASPSP() ([]byte, error) {
 
 // ListAccounts method
 func (c *Client) ListAccounts(aspspCde string) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/accounts"
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", aspspCde+"/v1-0-2/accounts", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -92,11 +99,7 @@ func (c *Client) ListAccounts(aspspCde string) ([]byte, error) {
 
 // GetAccount method
 func (c *Client) GetAccount(aspspCde, accountID string) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/accounts/" + accountID
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", aspspCde+"/v1-0-2/accounts/"+accountID, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -109,11 +112,7 @@ func (c *Client) GetAccount(aspspCde, accountID string) ([]byte, error) {
 
 // GetBalances method
 func (c *Client) GetBalances(aspspCde, accountID string) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/accounts/" + accountID + "/balances"
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", aspspCde+"/v1-0-2/accounts/"+accountID+"/balances", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -126,11 +125,7 @@ func (c *Client) GetBalances(aspspCde, accountID string) ([]byte, error) {
 
 // GetTransactions method
 func (c *Client) GetTransactions(aspspCde, accountID string) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/accounts/" + accountID + "/transactions"
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", aspspCde+"/v1-0-2/accounts/"+accountID+"/transactions", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -143,11 +138,7 @@ func (c *Client) GetTransactions(aspspCde, accountID string) ([]byte, error) {
 
 // GetConsent method
 func (c *Client) GetConsent(aspspCde, consentID string) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/consents/" + consentID
-
-	req, err := http.NewRequest("GET", host+urlPath, nil)
+	req, err := c.newRequest("GET", aspspCde+"/v1-0-2/consents/"+consentID, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -164,10 +155,6 @@ func (c *Client) GetConsent(aspspCde, consentID string) ([]byte, error) {
 
 // NewConsent method
 func (c *Client) NewConsent(aspspCde string, payloadStruct ConsentPayload) ([]byte, error) {
-	host := "https://site1.sibsapimarket.com:8444"
-	// host := "https://site2.sibsapimarket.com:8445"
-	urlPath := "/sibs/apimarket-sb/" + aspspCde + "/v1-0-2/consents"
-
 	// Prepare Query Parameters
 	// params := url.Values{}
 	// params.Add("tppRedirectPreferred", "http://localhost")
@@ -178,7 +165,7 @@ func (c *Client) NewConsent(aspspCde string, payloadStruct ConsentPayload) ([]by
 		return nil, err
 	}
 
-	req, err := http.NewRequest("POST", host+urlPath, bytes.NewReader([]byte(payload)))
+	req, err := c.newRequest("POST", aspspCde+"/v1-0-2/consents", bytes.NewReader([]byte(payload)))
 	if err != nil {
 		return nil, err
 	}
